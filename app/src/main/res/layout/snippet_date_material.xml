@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:showIn="@layout/fragment_sales">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutFromDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditTextFromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/date"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutToDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutFromDate"
+        android:layout_marginTop="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditTextToDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/to_date"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutToDate"
+        android:layout_marginTop="8dp">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/business_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoutToDate"
+            android:layout_marginTop="8dp"
+            android:hint="@string/enter_business_name"
+            android:inputType="textPhonetic"
+            android:maxLines="1"
+            android:imeOptions="actionDone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/business_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutBusiness"
+        android:text="@string/all" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/business_checkBox"
+        android:layout_marginTop="8dp">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/material_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/business_checkBox"
+            android:layout_marginTop="8dp"
+            android:hint="@string/enter_material_name"
+            android:inputType="textPhonetic"
+            android:maxLines="1"
+            android:imeOptions="actionDone"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/material_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayoutMaterial"
+        android:text="@string/all" />
+
+
+    <!--<com.thomashaertel.widget.MultiSpinner-->
+    <!--android:id="@+id/material_spinner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:layout_below="@+id/textInputLayoutToDate"-->
+    <!--android:background="@drawable/white_bottom_border"-->
+    <!--android:layout_marginTop="8dp" />-->
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/appCompatButtonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/material_checkBox"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/submit"
+        android:textColor="@android:color/black" />
+
+    <!--<fr.ganfra.materialspinner.MaterialSpinner-->
+    <!--android:id="@+id/material_spinner_transaction_type"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/appCompatButtonSubmit"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--app:ms_arrowColor="@color/colorText"-->
+    <!--app:ms_arrowSize="16dp"-->
+    <!--app:ms_baseColor="@android:color/white"-->
+    <!--app:ms_floatingLabelColor="@color/colorAccent"-->
+    <!--app:ms_floatingLabelText="@string/transaction_type"-->
+    <!--app:ms_hint="@string/transaction_type"-->
+    <!--app:ms_multiline="true"-->
+    <!--app:ms_thickness="1dp" />-->
+</RelativeLayout>

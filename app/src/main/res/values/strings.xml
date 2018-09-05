@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Sri Ambal Crusher</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="text_login">Login</string>
+    <string name="user_name">Username</string>
+    <string name="error_message_username">Enter Valid Username</string>
+    <string name="error_message_date">Enter the date.</string>
+    <string name="error_business_name">Enter the Business Name.</string>
+    <string name="error_material_name">Enter the Material Name.</string>
+    <string name="error_message_password">Enter Valid Password</string>
+    <string name="error_valid_username_password">Enter a Valid Username and Password</string>
+    <string name="sales">Sales</string>
+    <string name="expense">Expense</string>
+    <string name="collections">Collections</string>
+    <string name="fuel">Fuel</string>
+    <string name="material_transit">Material Transit</string>
+    <string name="explosive">Explosive</string>
+    <string name="purchase">Purchase</string>
+    <string name="date">Enter From Date</string>
+    <string name="to_date">Enter To Date</string>
+    <string name="select_material">Select a Material</string>
+    <string name="submit">Submit</string>
+    <string name="amount">Amount</string>
+    <string name="_10_000">10,000</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="tranist_type">Transit Type</string>
+    <string name="five">5</string>
+    <string name="number_of_units">Number of Units</string>
+    <string name="amount_spend">Amount spend</string>
+    <string name="litre">Litre</string>
+    <string name="number_of_barrel">No of Barrel</string>
+    <string name="material">Material</string>
+    <string name="no_of_units_transported">Units Transported</string>
+    <string name="no_of_trips">No of Trips</string>
+    <string name="no_of_box">No of Boxes</string>
+    <string name="credit">Credit</string>
+    <string name="cash">Cash</string>
+    <string name="expenditure_type">Expenditure Type</string>
+    <string name="collection_type">Collection  Type</string>
+    <string name="vendor_name">Vendor Name</string>
+    <string name="purchase_item">Purchase Item</string>
+    <string name="internet_message">You need to have Mobile Data or Wifi to use this Application !!!.</string>
+    <string name="okay">OKAY</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_business_name">Enter Business Name</string>
+    <string name="enter_material_name">Enter Material</string>
+    <string name="all">All</string>
+    <string name="fuel_type">Fuel Type</string>
+    <string name="df">DF</string>
+    <string name="ef">EF</string>
+    <string name="error_message">Choose a type</string>
+    <string name="no_internet">No Internet !!!</string>
+</resources>
